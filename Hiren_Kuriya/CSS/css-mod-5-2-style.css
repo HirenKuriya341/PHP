@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+hr {
+    height: 5px;
+    color: #000000;
+    background-color: blueviolet;
+    margin-bottom: 40px;
+}
+
+header {
+    position: static;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    background-color: antiquewhite;
+}
+
+/* sidebar css */
+main .sidebar {
+    height: 100%;
+    width: 25%;
+    background-color: blueviolet;
+    position: absolute;
+    float: left;
+}
+
+main .sidebar img {
+    margin: 100px 80px 30px;
+    border-radius: 100%;
+    width: 50%;
+    outline: 40px double purple;
+}
+
+main .sidebar ul {
+    text-align: center;
+    margin-left: -50px;
+}
+
+main .sidebar ul li {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+main .sidebar ul li a {
+    color: #000000;
+}
+
+main .sidebar ul li a:hover {
+    color: #ffffff;
+    text-shadow: 4px 4px 5px purple;
+    transition: all .2s ease;
+}
+
+/* main-content css */
+.main-content {
+    background-color: beige;
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    margin-left: 24%;
+    overflow: auto;
+}
+
+.main-content .content h1 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.main-content .content {
+    margin: 0 100px 0 100px;
+    /* padding-top: 200px; */
+}
+
+.main-content .content ul li {
+    margin: 10px;
+
+}
+
+#About {
+    padding-top: 20px;
+    padding-bottom: 300px;
+    margin-left: 100px;
+}
+
+#About td, th {
+    padding: 15px 10px 5px 30px;
+    border-bottom: 2px solid purple;
+}
+
+#About td:hover, th:hover {
+    padding: 15px 10px 5px 30px;
+    border: none;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px salmon;
+}
+
+#Acadamic_Background {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: 100px;
+}
+
+#Acadamic_Background table {
+    text-align: center;
+    padding: 10px;
+}
+
+#Acadamic_Background thead td {
+    border-bottom: 3px solid purple;
+    border-top: 3px solid purple;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#Acadamic_Background tbody td {
+    border-bottom: 2px solid purple;
+    font-size: 20px;
+}
+
+#Acadamic_Background tbody td:hover {
+    border: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px salmon;
+}
+
+#Career_Objectives {
+    padding-top: 250px;
+    padding-bottom: 300px;
+    margin-left: 100px;
+}
+
+#Skills_Strengths {
+    padding-top: 250px;
+    padding-bottom: 250px;
+    margin-left: 100px;
+}
+
+#Acadamic_Projects {
+    padding-top: 250px;
+    padding-bottom: 300px;
+    margin-left: 100px;
+}
+
+#Extracurricular_Activites {
+    padding-top: 250px;
+    padding-bottom: 300px;
+    margin-left: 100px;
+}
+
+#Declaration {
+    padding-top: 250px;
+    padding-bottom: 300px;
+    margin-left: 100px;
+}
+
+#Project_Video {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#Project_Video video {
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 10px 5px black;
+}
+
+.contact {
+    height: 500px;
+    width: 100%;
+    margin-left: 200px;
+}
+
+.social-media {
+    background-color: rgb(117, 0, 250);
+    float: left;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.contact em {
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    padding: 25px;
+    color: #ffffff;
+}
+
+.contact em:hover {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(117, 0, 250);
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid rgb(117, 0, 250);
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+    main .sidebar img {
+        margin: 100px 35px 30px;
+        border-radius: 100%;
+        width: 50%;
+        outline: 30px double purple;
+    }
+
+    table {
+        height: 300px;
+        width: 500px;
+    }
+
+    .contact {
+        height: 500px;
+        width: 100%;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .sidebar img {
+        margin: 100px 25px 30px;
+        border-radius: 100%;
+        width: 50%;
+        outline: 30px double purple;
+    }
+
+    table {
+        height: 300px;
+        width: 100px;
+    }
+
+    .main-content .content {
+        margin-left: 50px;
+    }
+}

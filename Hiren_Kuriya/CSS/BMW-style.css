@@ -1,0 +1,86 @@
+.navbar {
+    box-shadow: 2px 2px 5px #3292a6;
+    opacity: 0.8;
+    background-color: #ffffff;
+}
+
+.navbar .nav-item {
+    font-size: 1.3rem;
+    padding-right: 20px;
+}
+
+#showcase {
+    background: url('/Hiren_Kuriya/Images/BMW/mountain.jpg');
+    min-height: 600px;
+    position: relative;
+}
+#showcase .primary-overlay {
+    background: rgba(50, 146, 146, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#boxes .border-primary:hover {
+    background-color: #0d6efd;
+}
+
+#boxes .card-1:hover h3 {
+    color: #fff !important;
+}
+
+#boxes .card-1:hover .text-dark {
+    color: #fff !important;
+}
+
+#boxes .card-3:hover h3 {
+    color: #fff !important;
+}
+
+#boxes .card-3:hover .text-dark {
+    color: #fff !important;
+}
+
+#boxes .bg-primary:hover {
+    background-color: #fff !important;
+    border: 1px solid #0d6efd;
+}
+#boxes .card-2:hover h3 {
+    color: #0d6efd !important;
+}
+
+#boxes .card-2:hover p {
+    color: #000 !important;
+}
+
+#boxes .card-4:hover h3 {
+    color: #0d6efd !important;
+}
+
+#boxes .card-4:hover p {
+    color: #000 !important;
+}
+
+.info-header {
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+#showroom img {
+    margin-top: -60px;
+}
+
+#showroom .card:hover, #showroom .card .card-body p:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+#showroom .fa {
+    font-size: 30px;
+}
+#showroom .card-body:hover .fa {
+    color: #fff;
+}

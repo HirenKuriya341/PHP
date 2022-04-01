@@ -1,0 +1,211 @@
+* {
+    font-family: 'roboto', sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+body {
+    list-style: none;
+}
+
+hr {
+    height: 2px;
+    background-color: blueviolet;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.5fr 3.5fr;
+    grid-template-rows: 0.8fr 5fr 1fr;
+    grid-template-areas:
+        "nav nav"
+        "sidebar main";
+}
+
+/* header */
+nav {
+    background-color: antiquewhite;
+    grid-area: nav;
+}
+
+nav h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* sidebar */
+.sidebar {
+    background-color: grey;
+    grid-area: sidebar;
+    text-align: center;
+}
+
+.sidebar ul li img {
+    width: 50%;
+    border-radius: 100%;
+    outline: 40px double purple;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+.sidebar ul li {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px purple;
+}
+
+/* main */
+main {
+    background-color: aliceblue;
+    grid-area: main;
+    padding: 20px 20px 0 100px;
+    overflow: auto;
+}
+
+#About {
+    padding-top: 20px;
+    padding-bottom: 300px;
+}
+
+#About td,
+th {
+    padding: 15px 10px 5px 30px;
+    border-bottom: 2px solid purple;
+}
+
+#About td:hover,
+th:hover {
+    padding: 15px 10px 5px 30px;
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    text-shadow: 1px 1px 1px salmon;
+}
+
+.social-media {
+    background-color: rgb(117, 0, 250);
+    float: left;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.contact em {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.contact em:hover {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(117, 0, 250);
+    background-color: #ffffff;
+    border-radius: 20px;
+    outline: 2px solid rgb(117, 0, 250);
+}
+
+#Acadamic_Background {
+    padding-top: 150px;
+}
+
+#Acadamic_Background table {
+    text-align: center;
+    padding: 10px;
+}
+
+#Acadamic_Background thead td {
+    border-bottom: 3px solid purple;
+    border-top: 3px solid purple;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#Acadamic_Background tbody td {
+    border-bottom: 2px solid purple;
+    font-size: 20px;
+}
+
+#Acadamic_Background tbody td:hover {
+    border-bottom: 2px solid aliceblue;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px salmon;
+}
+
+#Career_Objectives, #Skills_Strengths, #Acadamic_Projects, #Extracurricular_Activites, #Declaration {
+    padding-top: 250px;
+    padding-bottom: 300px;
+}
+
+#Project_Video {
+    /* padding-top: 40px; */
+    padding-bottom: 100px;
+}
+
+#Project_Video video {
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 10px 5px black;
+}
+
+/* footer
+        footer {
+            background-color: azure;
+            grid-area: footer;
+        } */
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 3fr;
+        grid-template-areas:
+            "nav"
+            "sidebar"
+            "main";
+    }
+
+    .sidebar {
+        height: max-content;
+    }
+
+    .sidebar ul li img {
+        width: 25%;
+        display: none;
+        border-radius: 50%;
+        outline: 20px double purple;
+        margin-top: 10px;
+    }
+
+    .sidebar ul li {
+        margin: 5px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    main {
+        background-color: aliceblue;
+        grid-area: main;
+        padding: 20px 20px;
+        overflow-x: hidden;
+    }
+
+    #Career_Objectives, #Skills_Strengths, #Acadamic_Projects, #Extracurricular_Activites, #Declaration, #Acadamic_Background, #About {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
